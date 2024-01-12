@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color : rgb(243, 188, 25); 
+    --gap : 20px ;
+}
+
+html{
+    overflow-x: hidden;
+}
+.nav a{
+    color: white;
+}
+
+.navbar-nav .nav-link{
+    transition: all 0.4s ;
+}
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link:hover{
+    
+     color:goldenrod !important;
+     
+}
+
+.dropee1 a{
+    text-decoration: none;
+    color: black;
+}
+.dropedown{
+    position: relative;
+}
+.ul-drop {
+    z-index: 5;
+    background-color: white;
+    color: black;
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0,2px);
+   transition: all 1s;
+
+   
+}
+.ul-drop ul{
+    transition: all 1s;
+}
+.li-dropdown:hover{
+    
+       .ul-drop{
+        
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0,0px);
+        
+       }
+       
+   
+}
+.nav-iteme{
+    transition: all 0.4s;
+}
+.nav-itemee{
+    transition: all 0.4s;
+}
+.nav-itemee:hover{
+    background-color: var(--main-color);
+}
+.nav-iteme:hover{
+   
+        background-color: var(--main-color);
+    
+}
+
+.ul-drop li{
+    padding-bottom: 10px;
+}
+.li-deep{
+    position: relative;
+}
+.deepe-drop{
+    position: absolute;
+    list-style-type: none;
+    padding-left: 0;
+    left: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-1px,0);
+    top: 0px;
+    
+}
+
+
+.deepe2:hover {
+    .deepe-drop{
+        opacity: 1;
+        visibility:visible;
+        transform: translate(0px,0);
+        
+    }
+}
+.nav-button{
+    background-color: transparent;
+    border: 2px solid goldenrod; 
+    color: white;
+    transition: all 1s;
+
+}
+.nav-button:hover{
+    background-color: goldenrod;
+    color: rgb(0, 0, 0);
+}
+
+.home{
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat ;
+    background-position: center center ;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    
+}
+.dot-after{
+    position: relative;
+}
+.dot-after::after{
+    content: " ";
+    position:absolute;
+    background-color: var(--main-color) ;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: 50%;
+    left: 150;
+
+}
+
+.div-icon{
+    width: 100%;
+    height: 100px;
+    border: 2px gray solid;
+    transition:all 1s ;
+    cursor: pointer;
+}
+
+.div-icon span {
+    color: white;
+    transition: all 1s;
+}
+
+.theicon i{
+    color: white;
+}
+
+.div-icon:hover {
+    border: 2px goldenrod solid;
+}
+
+.div-icon span:hover{
+    color: goldenrod;
+}
+.thefixeddiv{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    
+    
+}
+
+.thetoparrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    cursor: pointer;
+    background-color: var(--main-color);
+    transition: all 0.6s;
+}
+
+.thetoparrow a{
+    color: black;
+}
+
+.thetoparrow:hover{
+    background-color: black;
+    a{
+        color: var(--main-color);
+    }
+}
+
+
+/** ---------------------------------------------------------------------------------------------------------------------------------------**/
+
+/**                                                       About Section                                                                   **/
+
+.about-ul{
+    list-style-type: none ;
+}
+
+
+/** -----------------------------------------------------------------------------------------------------------**/
+
+/**                                                       Services Section                                  **/
+
+
+.servicestitle .thetitle{
+    position: relative;
+   
+}
+
+.servicestitle .thetitle::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--main-color) ;
+    height: 2px;
+    width: 115px;
+   
+    
+    top: 50%;
+    left: 100px;
+
+}
+
+.the-service-card{
+    border: 0.5px solid gainsboro;
+    transition: all 0.4s;
+}
+
+.the-service-card:hover{
+    border: none;
+    transform: translate(0,-8px);
+    box-shadow: -1px -1px 57px 0px rgba(121, 118, 118, 0.75);
+    -webkit-box-shadow: -1px -1px 57px 0px rgba(121, 118, 118, 0.75);
+    -moz-box-shadow: -1px -1px 57px 0px rgba(121, 118, 118, 0.75) ;
+}
+
+.icon-service-div{
+    width: 60px;
+    border-radius: 10px;
+    height: 60px;
+    background-color: var(--main-color);
+}
+
+
+/** ----------------------------------------------------------------------------------------------------**/
+
+/**                                         section button                                             **/
+
+.button-section{
+    background-image: url(../images/cta-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+.button-layer{
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0,0.4);
+}
+
+.call-btn{
+    color: white;
+    border: 1px solid white;
+
+    transition: all 0.8s;
+}
+
+.call-btn:hover{
+
+    background-color: var(--main-color);
+    color: black;
+
+}
+
+
+
+
+/**  -------------------------------------------------------------------------------------------**/
+/**                                 portifolio                                                 **/
+
+
+#portifolio .nav-pills .nav-link{
+    color: black;
+    font-weight:bold ;
+    transition: all 0.4s;
+}
+#portifolio .nav-pills .nav-link.active{
+        background-color: var(--main-color);
+        border-radius: 8px;
+        color: black;
+        font-weight:bold ;
+}
+
+#portifolio .nav-pills .nav-link:hover{
+       background-color: var(--main-color);
+}
+.ourgallery{
+    columns: 3;
+}
+.photo img{
+    width: 100%;
+    margin-bottom: 16px;
+    transform: scale(1);
+    transition: all 0.6s;
+   
+}
+
+.photo{
+    overflow-y: hidden;
+}
+.overflowing{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.porti-layer{
+    position: absolute ;
+    z-index: 10;
+    background-color: rgba(0, 0, 0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 14px;
+    color: white;
+    transition: all 0.8s;
+    opacity: 0;
+    overflow: hidden;
+   
+}
+
+.photo:hover{
+    .porti-layer{
+        opacity: 1;
+    }
+}
+.photo:hover{
+    img{
+        transform: scale(1.02);
+       
+
+    }
+}
+.porti-icon1 {
+    transition: all 0.4s;
+}
+
+
+.porti-icon1:hover{
+    color: goldenrod;
+    
+
+}
+.porti-icon2 {
+    transition: all 0.4s;
+}
+
+
+.porti-icon2:hover{
+    color: goldenrod;
+    
+
+}
+
+@media screen and (max-width:992px){
+    .ourgallery{
+        columns: 1;
+    }
+}
+
+
+
+.icone-sec{
+    color: goldenrod;
+}
+/**-------------------------------------------------------------------------------------------**/
+
+
+
+
+
+.image-containerr {
+    width: 120px;
+    height:120px;
+    
+    background-color: rgba(122, 120, 120,0.2);
+    border-radius: 50%;
+}
+
+#testinomial{
+    background-image: url('../images/testimonials-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#testinomial{
+    position: relative;
+}
+.testinomial-layer{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0   ;
+    bottom: 0;
+    background-color: rgb(0, 0, 0,0.2);
+}
+
+
+.carousel-indicators [data-bs-target]{
+    all: unset;
+    background-color: white;
+    opacity: 0.6;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 3px;
+    transition: all 0.3s;
+}
+
+.carousel-indicators [data-bs-target].active{
+    opacity: 1;
+    background-color: var(--main-color);
+}
+
+
+/**-------------------------------------------------------------------------------------------**/
+
+/**-----------------------------------       team       -------------------------------------**/
+
+
+
+
+.teamcard{
+
+    box-shadow: 16px 9px 58px -14px rgba(165,165,165,0.75);
+    -webkit-box-shadow: 16px 9px 58px -14px rgba(165,165,165,0.75);
+    -moz-box-shadow: 16px 9px 58px -14px rgba(165,165,165,0.75);
+
+}
+
+
+.teameicone a{
+    text-decoration: none;
+    color:gray;
+    transition: all 0.8s;
+}
+.divvv{
+    width:30px ;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+   justify-content: center ;
+   align-items: center;
+   background-color: whitesmoke;
+   transition: all 0.8s;
+   opacity: 0;
+}
+
+.divvv:hover{
+    a{
+        color: black;
+    }
+    background-color: var(--main-color);
+}
+
+.teamcard:hover{
+       .divvv{
+        opacity: 1;
+       }
+}
+
+/**-------------------------------------------------------------------------------------------**/
+
+/**-----------------------------------       contact      -------------------------------------**/
+
+.contacticon{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    color: black;
+    background-color: var(--main-color);
+}
+
+/**-------------------------------------------------------------------------------------------**/
+
+/**-----------------------------------       footer1     -------------------------------------**/
+
+
+.footer1{
+    background-color: rgb(21, 21, 21);
+    color: whitesmoke;
+}
+
+
+.dot-after-footer{
+    position: relative;
+}
+.dot-after-footer::after{
+    content: " ";
+    position:absolute;
+    background-color: var(--main-color) ;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 50%;
+    right: -10px;
+
+}
+.div-footer a{
+    color: white;
+}
+.div-footer{
+
+    width:30px ;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+   justify-content: center ;
+   align-items: center;
+   background-color: rgb(74, 74, 74);
+   transition: all 0.4s;
+
+}
+
+.div-footer:hover{
+    background-color: var(--main-color);
+    a{
+        color: black;
+    }
+   
+    
+}
+
+.footer-list ul{
+    padding: 0;
+
+}
+.footer-list li{
+    list-style-type: none ;
+    padding-bottom: 18px;
+    
+}
+
+.footer-list li span{
+    color: var(--main-color);
+}
+
+.footer-list li a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.footer-list li a:hover{
+    color: var(--main-color);
+}
+.footer2{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+}
+
+.footer2 span{
+    cursor: pointer;
+    color: var(--main-color);
+    transition: all 0.5s;
+
+}
+
+.footer2 span:hover{
+    color: darkgoldenrod;
+}
