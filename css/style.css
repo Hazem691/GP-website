@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 :root{
@@ -10,9 +11,7 @@
     --gap : 20px ;
 }
 
-html{
-    overflow-x: hidden;
-}
+
 .nav a{
     color: white;
 }
@@ -26,7 +25,9 @@ html{
      color:goldenrod !important;
      
 }
-
+body{
+    overflow-x: hidden;
+}
 .dropee1 a{
     text-decoration: none;
     color: black;
@@ -120,7 +121,7 @@ html{
 }
 
 .home{
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url('../images/hero-bg.jpg');
     background-repeat: no-repeat ;
     background-position: center center ;
     background-attachment: fixed;
