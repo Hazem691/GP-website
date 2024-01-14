@@ -17,13 +17,23 @@
 }
 
 .navbar-nav .nav-link{
-    transition: all 0.4s ;
+    transition: all 0.8s ;
 }
-.navbar-nav .nav-link.active, 
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:active{
     
      color:goldenrod !important;
      
+}
+.navbar-nav .nav-link.active {
+    color: goldenrod !important;
+}
+
+.navbar-nav .nav-link:hover{
+    color: goldenrod !important;
+}
+
+.nav-link.active:active{
+    color: goldenrod !important ;
 }
 body{
     overflow-x: hidden;
@@ -120,7 +130,7 @@ body{
     color: rgb(0, 0, 0);
 }
 
-.home{
+#home{
     background-image: url('../images/hero-bg.jpg');
     background-repeat: no-repeat ;
     background-position: center center ;
