@@ -182,6 +182,7 @@ body{
     position: fixed;
     bottom: 30px;
     right: 10px;
+    z-index: 40;
     
     
 }
